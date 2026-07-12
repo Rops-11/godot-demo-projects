@@ -6,6 +6,8 @@ enum State {
 	DEAD,
 }
 
+signal destroyed
+
 const WALK_SPEED = 22.0
 
 var _state := State.WALKING
@@ -43,8 +45,11 @@ func _physics_process(delta: float) -> void:
 
 
 func destroy() -> void:
+	if _state == State.DEAD:
+		return
 	_state = State.DEAD
 	velocity = Vector2.ZERO
+	destroyed.emit()
 
 
 func get_new_animation() -> StringName:

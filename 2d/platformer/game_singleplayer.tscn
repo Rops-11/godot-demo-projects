@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dwvlcsxdrm03l" path="res://game.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://cygtqanamu68e" path="res://level/level.tscn" id="3"]
+[ext_resource type="Script" uid="uid://dtswi5yuvahc" path="res://level/level.gd" id="3_2olji"]
 [ext_resource type="PackedScene" uid="uid://dsqy8lxrpip13" path="res://player/player.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://nhpj5cy87771" path="res://gui/pause_menu_singleplayer.tscn" id="4_x6l06"]
 
@@ -10,6 +11,7 @@ process_mode = 3
 script = ExtResource("2")
 
 [node name="Level" parent="." unique_id=1137818157 instance=ExtResource("3")]
+script = ExtResource("3_2olji")
 
 [node name="Player" parent="Level" unique_id=717387679 instance=ExtResource("4")]
 z_index = 3

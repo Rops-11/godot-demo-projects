@@ -81,4 +81,4 @@ func _check_cleared() -> void:
 
 
 func _on_artifact_unlocked(_artifact_data: Dictionary, _is_new_unlock: bool) -> void:
-	get_tree().change_scene_to_file("res://gui/level_complete.tscn")
+	get_tree().change_scene_to_file("res://addons/game_on/artifact_success.tscn")

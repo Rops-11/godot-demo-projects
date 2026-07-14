@@ -1,9 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1mainmenuabcd"]
+[gd_scene format=3 uid="uid://cm5gsrlvd75xv"]
 
-[ext_resource type="Script" path="res://main_menu.gd" id="1_main_menu"]
+[ext_resource type="Script" uid="uid://86grojxhb31t" path="res://main_menu.gd" id="1_main_menu"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=2017490982]
 process_mode = 3
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -11,52 +12,53 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_main_menu")
 
-[node name="Background" type="ColorRect" parent="."]
-anchors_preset = 15
+[node name="Background" type="ColorRect" parent="." unique_id=1385557119]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.1, 0.1, 0.15, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchors_preset = 15
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=15099123]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=179225270]
 custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=145011760]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "GameOn Platformer"
 horizontal_alignment = 1
-theme_override_font_sizes/font_size = 32
 
-[node name="StatusLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="StatusLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1575479459]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Press Connect to begin"
 horizontal_alignment = 1
 
-[node name="ConnectButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="GameOnAuthenticateButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=323309809]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
-text = "Connect Account"
+text = "Authenticate with GameOn"
 
-[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=881581284]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 text = "Start Game"
 
-[node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1019295740]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(0, 48)

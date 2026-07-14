@@ -1,15 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://level_complete_scene"]
+[gd_scene load_steps=2 format=3 uid="uid://game_on_artifact_success"]
 
-[ext_resource type="Script" path="res://gui/level_complete.gd" id="1_level_complete"]
+[ext_resource type="Script" path="res://addons/game_on/artifact_success.gd" id="1_artifact_success"]
 
-[node name="LevelComplete" type="Control"]
+[node name="ArtifactSuccess" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_level_complete")
+script = ExtResource("1_artifact_success")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1

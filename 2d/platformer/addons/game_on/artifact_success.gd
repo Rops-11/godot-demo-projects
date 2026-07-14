@@ -1,5 +1,7 @@
-class_name LevelComplete
+class_name ArtifactSuccess
 extends Control
+
+signal back_pressed
 
 @onready var title_label: Label = %Title
 @onready var artifact_name_label: Label = %ArtifactName
@@ -61,4 +63,5 @@ func _download_thumbnail(url: String) -> void:
 
 
 func _on_back_pressed() -> void:
+	back_pressed.emit()
 	get_tree().change_scene_to_file("res://main_menu.tscn")

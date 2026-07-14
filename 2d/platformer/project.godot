@@ -25,8 +25,8 @@ config/icon="res://icon.webp"
 
 [autoload]
 
-GameOnPortal="*res://autoload/game_on_connect.gd"
 Music="*res://music.tscn"
+GameOnPortal="*uid://bveglx7j2y7jj"
 
 [debug]
 
@@ -41,6 +41,14 @@ window/size/window_height_override=960
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/game_on/plugin.cfg")
+
+[game_on]
+
+game_id="ba7a7756-948e-4da5-8ec4-071e1a6c7eb3"
 
 [importer_defaults]
 
